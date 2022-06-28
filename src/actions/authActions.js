@@ -11,10 +11,9 @@ import {
 
 // Register User
 export const registerUser = (userData, history) => dispatch => {
-  const apiUrl = "https:/server-hidropol.herokuapp.com";
 
   axios
-    .post(`${apiUrl}/api/users/register`, userData)
+    .post("https:/server-hidropol.herokuapp.com/api/users/register", userData)
     .then(res => {
       //get name data from res
       const {
@@ -43,7 +42,7 @@ export const registerUser = (userData, history) => dispatch => {
 // Login - get user token
 export const loginUser = userData => dispatch => {
   axios
-    .post(`${apiUrl}/api/users/login`, userData)
+    .post("https:/server-hidropol.herokuapp.com/api/users/login", userData)
     .then(res => {
       // Save to localStorage
 
