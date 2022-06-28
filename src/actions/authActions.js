@@ -11,7 +11,7 @@ import {
 
 // Register User
 export const registerUser = (userData, history) => dispatch => {
-  const apiUrl = "https://hidropol-be.herokuapp.com";
+  const apiUrl = "https:/server-hidropol.herokuapp.com";
 
   axios
     .post(`${apiUrl}/api/users/register`, userData)
