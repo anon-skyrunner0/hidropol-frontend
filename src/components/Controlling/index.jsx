@@ -408,20 +408,8 @@ const Controlling = () => {
                           )}
                         </div>
                         <div className="row">
-                          <div
-                            className="phup"
-                            style={{
-                              display: "flex",
-                              flexDirection: "column",
-                            }}
-                          >
+                          <div className="col-md-6">
                             <label htmlFor="">PH Up</label>
-                            {/* <input
-                                type="checkbox"
-                                defaultChecked={ph_up}
-                                data-toggle="toggle"
-                                data-onstyle="dark"
-                              /> */}
                             <button
                               className="btn btn-danger px-5 py-3"
                               onClick={() => handlePhUp()}
@@ -430,13 +418,7 @@ const Controlling = () => {
                             </button>
                           </div>
 
-                          <div
-                            className="phdown"
-                            style={{
-                              display: "flex",
-                              flexDirection: "column",
-                            }}
-                          >
+                          <div className="col-md-6">
                             <label htmlFor="">PH Down</label>
                             <button
                               className="btn btn-danger px-5 py-3"
