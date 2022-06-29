@@ -407,7 +407,7 @@ const Controlling = () => {
                             </small>
                           )}
                         </div>
-                        <div className="form-group" style={{ display: "flex" }}>
+                        <div className="row">
                           <div
                             className="phup"
                             style={{

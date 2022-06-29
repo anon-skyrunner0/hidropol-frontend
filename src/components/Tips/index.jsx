@@ -1,12 +1,12 @@
 import React from "react";
-import icon1 from "../../Assets/images/icon1.png";
-import icon2 from "../../Assets/images/icon2.png";
-import icon3 from "../../Assets/images/icon3.png";
-import icon4 from "../../Assets/images/icon4.png";
-import icon5 from "../../Assets/images/icon5.png";
-import icon6 from "../../Assets/images/icon6.png";
-import icon7 from "../../Assets/images/icon7.png";
-import icon8 from "../../Assets/images/icon8.png";
+import icon1 from "../../Assets/images/icon (1).png";
+import icon2 from "../../Assets/images/icon (2).png";
+import icon3 from "../../Assets/images/icon (3).png";
+import icon4 from "../../Assets/images/icon (4).png";
+import icon5 from "../../Assets/images/icon (5).png";
+import icon6 from "../../Assets/images/icon (6).png";
+import icon7 from "../../Assets/images/icon (7).png";
+import icon8 from "../../Assets/images/icon (8).png";
 
 const Tips = () => {
   return (
