@@ -130,8 +130,9 @@ class NavbarGuest extends Component {
                   alt=""
                   width="38"
                   height="38"
-                  data-toggle="modal"
-                  data-target="#exampleModalLong"
+                  onClick={() =>
+                    swal("Notification", "You're Not Logged In !", "warning")
+                  }
                 />
                 <img
                   src={loginLogo}
@@ -147,7 +148,7 @@ class NavbarGuest extends Component {
           </div>
         </nav>
 
-        {/* Modal Notification */}
+        {/* Modal Notification *
         <div
           className="modal fade modal"
           id="exampleModalLong"

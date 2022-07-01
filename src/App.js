@@ -20,7 +20,7 @@ import Footer from "./components/Footer";
 import NavbarGuest from "./components/NavbarGuest";
 import About from "./components/About";
 import Tips from "./components/Tips";
-
+import Chart from "./components/Chart";
 // Check for token to keep user logged in
 if (localStorage.jwtToken) {
   // Set auth token header auth
@@ -58,6 +58,7 @@ class App extends Component {
             <Route exact path="/" component={Landing} />
             <Route exact path="/about" component={About} />
             <Route exact path="/tips" component={Tips} />
+            <Route exact path="/chart" component={Chart} />
             {/* <Route exact path="/login" component={Login} /> */}
             <Switch>
               <PrivateRoute exact path="/dashboard" component={Dashboard} />

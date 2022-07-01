@@ -9,6 +9,11 @@ import watertempReducer from "./watertempReducer";
 import heightReducer from "./heightReducer";
 import tempReducer from "./tempReducer";
 import controlReducer from "./controlReducer";
+import allNutrition from "./allNutrition";
+import allHeight from "./allHeight";
+import allWaterTemp from "./allWaterTemp";
+import allPH from "./allPH";
+import allOuterTemp from "./allOuterTemp";
 
 export default combineReducers({
   auth: authReducer,
@@ -18,5 +23,10 @@ export default combineReducers({
   water_temp_sensor: watertempReducer,
   water_height_sensor: heightReducer,
   temp_sensor: tempReducer,
-  control: controlReducer
+  control: controlReducer,
+  allNutrition: allNutrition,
+  allHeight: allHeight,
+  allWaterTemp: allWaterTemp,
+  allPH: allPH,
+  allOuterTemp: allOuterTemp
 });

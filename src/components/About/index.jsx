@@ -51,7 +51,7 @@ const About = () => {
                   <br />
                   4311901068 - Amira Afiqa Ardi
                   <br />
-                  4311901009 - Samudra Abriliawan
+                  4311901093 - Samudra Abriliawan
                 </p>
               </div>
               <div class="col-md-6 rounded-start">

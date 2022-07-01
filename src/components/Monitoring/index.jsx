@@ -193,7 +193,7 @@ const Monitoring = () => {
                 <h1 class="h2">
                   See Recorded hydroponic progress measurement data.
                 </h1>
-                <a href="Chart.html">
+                <a href="/chart" style={{ textDecoration: "none" }}>
                   <button
                     type="button"
                     class="btn btn-primary btn-sm btn-block"
@@ -223,7 +223,7 @@ const Monitoring = () => {
                         <br />
                         <br />
                       </p>
-                      <a className="float-left" href="about.html">
+                      <a className="float-left" href="/about">
                         <button class="button button1">Read more</button>
                       </a>
                     </div>
