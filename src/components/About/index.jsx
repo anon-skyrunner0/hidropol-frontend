@@ -64,7 +64,8 @@ const About = () => {
               </div>
               <p>
                 <br />
-              {/* </p>
+              </p>
+              {/*
               <a class="text-left mb-3" href="hidropol.html">
                 <button class="button button1">Read more</button>
               </a> */}
