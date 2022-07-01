@@ -98,7 +98,7 @@ const Chart = () => {
             <p className="text-muted" style={{ fontWeight: "100" }}>
               5 latest nutrition data appears below. . .
             </p>
-            <small>Average Nutrition : {avgNutrition} ppm</small>
+            <small>Average Nutrition : {avgNutrition.toFixed(2)} ppm</small>
           </div>
           <table
             id="table_id"
@@ -140,7 +140,7 @@ const Chart = () => {
             <p className="text-muted" style={{ fontWeight: "100" }}>
               5 latest PH data appears below. . .
             </p>
-            <small>Average PH : {avgPH}</small>
+            <small>Average PH : {avgPH.toFixed(2)}</small>
           </div>
           <table
             id="table_id"
@@ -182,7 +182,7 @@ const Chart = () => {
             <p className="text-muted" style={{ fontWeight: "100" }}>
               5 latest Water Temperature data appears below. . .
             </p>
-            <small>Average Water Temperature : {avgWaterTemp}</small>
+            <small>Average Water Temperature : {avgWaterTemp.toFixed(2)}</small>
           </div>
           <table
             id="table_id"
