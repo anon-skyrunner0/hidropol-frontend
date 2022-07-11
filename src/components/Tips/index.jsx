@@ -40,7 +40,7 @@ const Tips = () => {
                   horticultural plants, such as leafy vegetables, fruit
                   vegetables, fruits, to ornamental plants...
                 </p>
-                <a href="hidropol1.html">
+                <a href="/tips1">
                   <button className="button button1">Read more</button>
                 </a>
               </div>
@@ -70,7 +70,7 @@ const Tips = () => {
                   because it does not require as much water as conventionally
                   grown plants...
                 </p>
-                <a href="hidropol2.html">
+                <a href="/tips2">
                   <button className="button button1">Read more</button>
                 </a>
               </div>
@@ -100,7 +100,7 @@ const Tips = () => {
                   served as a complement to meatballs or directly stir-fried
                   and....
                 </p>
-                <a href="hidropol3.html">
+                <a href="/tips3">
                   <button className="button button1">Read more</button>
                 </a>
               </div>

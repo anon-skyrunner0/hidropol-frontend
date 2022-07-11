@@ -14,6 +14,9 @@ import Register from "./components/auth/Register";
 import Login from "./components/auth/Login";
 import PrivateRoute from "./components/private-route/PrivateRoute";
 import Dashboard from "./components/dashboard/Dashboard";
+import Tips1 from "./components/TipsPages/tips1";
+import Tips2 from "./components/TipsPages/tips2";
+import Tips3 from "./components/TipsPages/tips3";
 
 import "./App.css";
 import Footer from "./components/Footer";
@@ -59,6 +62,9 @@ class App extends Component {
             <Route exact path="/about" component={About} />
             <Route exact path="/tips" component={Tips} />
             <Route exact path="/chart" component={Chart} />
+            <Route exact path="/tips1" component={Tips1} />
+            <Route exact path="/tips2" component={Tips2} />
+            <Route exact path="/tips3" component={Tips3} />
             {/* <Route exact path="/login" component={Login} /> */}
             <Switch>
               <PrivateRoute exact path="/dashboard" component={Dashboard} />

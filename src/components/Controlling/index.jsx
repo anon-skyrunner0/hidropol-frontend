@@ -1,6 +1,6 @@
 import gambar1 from "../../Assets/images/ilus/gambar1.png";
 import icon6 from "../../Assets/images/icon (6).png";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 // import illusBawah from "../../Assets/images/ilus/ILUS HOME KONTEN.png";
 // import imgTemp from "../../Assets/images/temp.png";
 // import imgFloat from "../../Assets/images/uap.png";
@@ -267,6 +267,7 @@ const Controlling = () => {
         });
     }
   };
+  const [plant, setPlant] = React.useState([]);
 
   React.useEffect(() => {
     setTimeout(() => {
@@ -277,6 +278,11 @@ const Controlling = () => {
       dispatch(getController());
     }, 1000);
   }, []);
+
+  const handleChange = (e) => {
+    setPlant(e.target.value);
+    console.log(plant);
+  };
 
   return (
     <div
@@ -299,26 +305,28 @@ const Controlling = () => {
             </div>
             <div className="row justify-content-md-center">
               <br />
-              {/* <div className="col-lg-6 mb-3">
+              <div className="col-lg-6 mb-3">
                 <div className="cardi text-center border-light">
                   <img src={icon6} width="25%" height="25%" />
-                  {/* <div className="card-body">
+                  <div className="card-body">
                     <select
                       className="form-select"
                       aria-label="Default select example"
+                      value={plant}
+                      onChange={handleChange}
                     >
-                      <option selected>Choose plants</option>
-                      <option value={1}>Kangkung</option>
-                      <option value={2}>Pakcoy</option>
-                      <option value={3}>Selada</option>
+                      <option selected>What you want to plant ?</option>
+                      <option value="kangkung">Kangkung</option>
+                      <option value="pakcoy">Pakcoy</option>
+                      <option value="selada">Selada</option>
                     </select>
                     <br />
                     <a href="calender.html">
                       <button className="button button2">Start planting</button>
                     </a>
-                  </div> 
+                  </div>
                 </div>
-              </div> */}
+              </div>
             </div>
           </div>
           <div className="p-3">

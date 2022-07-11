@@ -112,25 +112,32 @@ const Chart = () => {
               </tr>
             </thead>
             <tbody>
-              {/* show 5 data of nutri */}
-              {nutri.slice(0, 5).map((item) => (
-                <tr key={item.id} className="text-center">
-                  <td>
-                    {// format date
-                    new Date(item.createdAt).toLocaleDateString("en-UK", {
-                      month: "short",
-                      day: "numeric",
-                      year: "numeric",
-                      hour: "numeric",
-                      minute: "numeric",
-                      second: "numeric",
-                      hour12: false,
-                      timeZone: "Asia/Bangkok",
-                    })}
-                  </td>
-                  <td>{item.data} ppm</td>
-                </tr>
-              ))}
+              {/* sorting data from the newest and limit to 5 */}
+              {nutri
+                .sort((a, b) => {
+                  return new Date(b.createdAt) - new Date(a.createdAt);
+                })
+                .slice(0, 5)
+                .map((item) => {
+                  return (
+                    <tr className="text-center">
+                      <td>
+                        {// format date
+                        new Date(item.createdAt).toLocaleDateString("en-UK", {
+                          month: "short",
+                          day: "numeric",
+                          year: "numeric",
+                          hour: "numeric",
+                          minute: "numeric",
+                          second: "numeric",
+                          hour12: false,
+                          timeZone: "Asia/Bangkok",
+                        })}
+                      </td>
+                      <td>{item.data}</td>
+                    </tr>
+                  );
+                })}
             </tbody>
           </table>
         </div>
@@ -154,25 +161,32 @@ const Chart = () => {
               </tr>
             </thead>
             <tbody>
-              {/* show 5 data of ph */}
-              {ph.slice(0, 5).map((item) => (
-                <tr key={item.id} className="text-center">
-                  <td>
-                    {// format date
-                    new Date(item.createdAt).toLocaleDateString("en-UK", {
-                      month: "short",
-                      day: "numeric",
-                      year: "numeric",
-                      hour: "numeric",
-                      minute: "numeric",
-                      second: "numeric",
-                      hour12: false,
-                      timeZone: "Asia/Bangkok",
-                    })}
-                  </td>
-                  <td>{item.data}</td>
-                </tr>
-              ))}
+              {/* sorting data from the newest and limit to 5 */}
+              {ph
+                .sort((a, b) => {
+                  return new Date(b.createdAt) - new Date(a.createdAt);
+                })
+                .slice(0, 5)
+                .map((item) => {
+                  return (
+                    <tr className="text-center">
+                      <td>
+                        {// format date
+                        new Date(item.createdAt).toLocaleDateString("en-UK", {
+                          month: "short",
+                          day: "numeric",
+                          year: "numeric",
+                          hour: "numeric",
+                          minute: "numeric",
+                          second: "numeric",
+                          hour12: false,
+                          timeZone: "Asia/Bangkok",
+                        })}
+                      </td>
+                      <td>{item.data}</td>
+                    </tr>
+                  );
+                })}
             </tbody>
           </table>
         </div>
@@ -196,25 +210,32 @@ const Chart = () => {
               </tr>
             </thead>
             <tbody>
-              {/* show 5 data of ph */}
-              {waterTemp.slice(0, 5).map((item) => (
-                <tr key={item.id} className="text-center">
-                  <td>
-                    {// format date
-                    new Date(item.createdAt).toLocaleDateString("en-UK", {
-                      month: "short",
-                      day: "numeric",
-                      year: "numeric",
-                      hour: "numeric",
-                      minute: "numeric",
-                      second: "numeric",
-                      hour12: false,
-                      timeZone: "Asia/Bangkok",
-                    })}
-                  </td>
-                  <td>{item.data} &deg;c</td>
-                </tr>
-              ))}
+              {/* sorting data from the newest and limit to 5 */}
+              {waterTemp
+                .sort((a, b) => {
+                  return new Date(b.createdAt) - new Date(a.createdAt);
+                })
+                .slice(0, 5)
+                .map((item) => {
+                  return (
+                    <tr className="text-center">
+                      <td>
+                        {// format date
+                        new Date(item.createdAt).toLocaleDateString("en-UK", {
+                          month: "short",
+                          day: "numeric",
+                          year: "numeric",
+                          hour: "numeric",
+                          minute: "numeric",
+                          second: "numeric",
+                          hour12: false,
+                          timeZone: "Asia/Bangkok",
+                        })}
+                      </td>
+                      <td>{item.data}</td>
+                    </tr>
+                  );
+                })}
             </tbody>
           </table>
         </div>
