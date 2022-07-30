@@ -240,7 +240,7 @@ const Navbar = () => {
                 {phVal < 6 ? (
                   <div className="p-1">
                     <div className="card">
-                      <div className="card-header">
+                      <div className="py-4 px-5">
                         <h2 className="h5">Your PH is Under Level !!!</h2>
                       </div>
                     </div>
@@ -251,7 +251,7 @@ const Navbar = () => {
                 {phVal > 7 ? (
                   <div className="p-1">
                     <div className="card">
-                      <div className="card-header">
+                      <div className="py-4 px-5">
                         <h2 className="h5">Your PH is Too High !!!</h2>
                       </div>
                     </div>
@@ -262,7 +262,7 @@ const Navbar = () => {
                 {nutritionVal < 500 ? (
                   <div className="p-1">
                     <div className="card">
-                      <div className="card-header">
+                      <div className="py-4 px-5">
                         <h2 className="h5">
                           Your Nutrition is Under Level !!!
                         </h2>
@@ -275,7 +275,7 @@ const Navbar = () => {
                 {nutritionVal > 700 ? (
                   <div className="p-1">
                     <div className="card">
-                      <div className="card-header">
+                      <div className="py-4 px-5">
                         <h2 className="h5">Your Nutrition is Too High !!!</h2>
                       </div>
                     </div>
@@ -286,7 +286,7 @@ const Navbar = () => {
                 {waterHeightVal < 20 ? (
                   <div className="p-1">
                     <div className="card">
-                      <div className="card-header">
+                      <div className="py-4 px-5">
                         <h2 className="h5">
                           Your Water Height is Under Level !!!
                         </h2>

@@ -13,7 +13,7 @@ import {
 export const registerUser = (userData, history) => dispatch => {
 
   axios
-    .post("https://server-hidropol.herokuapp.com/api/users/register", userData)
+    .post("http://server-hidropol.herokuapp.com/api/users/register", userData)
     .then(res => {
       //get name data from res
       const {

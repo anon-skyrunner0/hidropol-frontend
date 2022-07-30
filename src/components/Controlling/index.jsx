@@ -58,6 +58,16 @@ const Controlling = () => {
 
   console.log("nutri", nutritionCntrl);
 
+  React.useEffect(() => {
+    setTimeout(() => {
+      dispatch(getPH());
+      dispatch(getNutrition());
+      dispatch(getWaterTemp());
+      dispatch(getWaterHeight());
+      dispatch(getController());
+    }, 1000);
+  }, []);
+
   //handle ph_up
   const handlePhUp = () => {
     //ph_up off
@@ -269,16 +279,6 @@ const Controlling = () => {
   };
   const [plant, setPlant] = React.useState([]);
 
-  React.useEffect(() => {
-    setTimeout(() => {
-      dispatch(getPH());
-      dispatch(getNutrition());
-      dispatch(getWaterTemp());
-      dispatch(getWaterHeight());
-      dispatch(getController());
-    }, 1000);
-  }, []);
-
   const handleChange = (e) => {
     setPlant(e.target.value);
     console.log(plant);
@@ -296,37 +296,34 @@ const Controlling = () => {
         className="rounded mx-auto d-block"
         alt="..."
       />
-      <h1 className="text-center h1">Controlling Panel</h1>
+      <h1 className="text-center h1 mb-3">Controlling Panel</h1>
       <div className="pl-12">
         <div className="container">
           <div className="row justify-content-between">
-            <div className="col-4">
-              <h1 className="h1 text-start" />
-            </div>
             <div className="row justify-content-md-center">
               <br />
-              <div className="col-lg-6 mb-3">
-                <div className="cardi text-center border-light">
-                  <img src={icon6} width="25%" height="25%" />
-                  <div className="card-body">
-                    <select
-                      className="form-select"
-                      aria-label="Default select example"
-                      value={plant}
-                      onChange={handleChange}
-                    >
-                      <option selected>What you want to plant ?</option>
-                      <option value="kangkung">Kangkung</option>
-                      <option value="pakcoy">Pakcoy</option>
-                      <option value="selada">Selada</option>
-                    </select>
-                    <br />
-                    <a href="calender.html">
+              <center>
+                <div className="col-md-6 mb-3">
+                  <div className="cardi pt-3 ml-4 text-center border-light">
+                    <img src={icon6} width="25%" height="25%" />
+                    <div className="card-body">
+                      <select
+                        className="form-select"
+                        aria-label="Default select example"
+                        value={plant}
+                        onChange={handleChange}
+                      >
+                        <option selected>What you want to plant ?</option>
+                        <option value="kangkung">Kangkung</option>
+                        <option value="pakcoy">Pakcoy</option>
+                        <option value="selada">Selada</option>
+                      </select>
+                      <br />
                       <button className="button button2">Start planting</button>
-                    </a>
+                    </div>
                   </div>
                 </div>
-              </div>
+              </center>
             </div>
           </div>
           <div className="p-3">
@@ -340,8 +337,8 @@ const Controlling = () => {
                     <br />
                     <div className="card-body">
                       <div className="cardalem">
-                        <div className="p-1">
-                          <h5 className="h4">Volume Air </h5>
+                        <div className="py-2">
+                          <h5 className="h4 mt-2">Volume Air </h5>
                         </div>
                       </div>
                       <br />
@@ -384,13 +381,13 @@ const Controlling = () => {
                     <br />
                     <div className="card-body">
                       <div className="cardalem">
-                        <div className="p-1">
-                          <h5 className="h4">Ph Air</h5>
+                        <div className="py-2">
+                          <h5 className="h4 mt-2">Ph Air</h5>
                         </div>
                       </div>
                       <br />
                       <br />
-                      <div className="p-4">
+                      <div className="pb-4">
                         <div className="form-group">
                           <label className="h5">Your Current Water Ph</label>
                           <input
@@ -417,9 +414,13 @@ const Controlling = () => {
                         </div>
                         <div className="row">
                           <div className="col-md-6">
-                            <label htmlFor="">PH Up</label>
+                            <p
+                              style={{ fontWeight: "100", marginBottom: "5px" }}
+                            >
+                              PH Up
+                            </p>
                             <button
-                              className="btn btn-danger px-5 py-3"
+                              className="btn btn-danger px-5 py-3 mb-3"
                               onClick={() => handlePhUp()}
                             >
                               {ph_up === true ? "TURN OFF" : "TURN ON"}
@@ -427,7 +428,14 @@ const Controlling = () => {
                           </div>
 
                           <div className="col-md-6">
-                            <label htmlFor="">PH Down</label>
+                            <p
+                              style={{
+                                fontWeight: "100",
+                                marginBottom: "5px",
+                              }}
+                            >
+                              PH Down
+                            </p>
                             <button
                               className="btn btn-danger px-5 py-3"
                               onClick={() => handlePhDown()}
@@ -453,8 +461,8 @@ const Controlling = () => {
                   <br />
                   <div className="card-body">
                     <div className="cardalem">
-                      <div className="p-1">
-                        <h5 className="h4">Nutrition</h5>
+                      <div className="p-1 py-2">
+                        <h5 className="h4 mt-2">Nutrition</h5>
                       </div>
                     </div>
                     <br />
@@ -500,8 +508,8 @@ const Controlling = () => {
                   <br />
                   <div className="card-body">
                     <div className="cardalem">
-                      <div className="p-1">
-                        <h5 className="h4">UV Light </h5>
+                      <div className="p-1 py-2">
+                        <h5 className="h4 mt-2">UV Light </h5>
                       </div>
                     </div>
                     <br />
