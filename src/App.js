@@ -24,6 +24,7 @@ import NavbarGuest from "./components/NavbarGuest";
 import About from "./components/About";
 import Tips from "./components/Tips";
 import Chart from "./components/Chart";
+import Calendar from "./components/Calendar";
 // Check for token to keep user logged in
 if (localStorage.jwtToken) {
   // Set auth token header auth
@@ -65,6 +66,7 @@ class App extends Component {
             <Route exact path="/tips1" component={Tips1} />
             <Route exact path="/tips2" component={Tips2} />
             <Route exact path="/tips3" component={Tips3} />
+            <Route exact path="/calendar" component={Calendar} />
             {/* <Route exact path="/login" component={Login} /> */}
             <Switch>
               <PrivateRoute exact path="/dashboard" component={Dashboard} />

@@ -111,11 +111,11 @@ const Navbar = () => {
                   Tips
                 </a>
               </li>
-              {/* <li className="nav-item">
-                <a className="nav-link" href="calender.html">
+              <li className="nav-item">
+                <a className="nav-link" href="/calendar">
                   Calendar
                 </a>
-              </li> */}
+              </li>
             </ul>
             <a className="navbar-brand" style={{ marginLeft: "-2px" }} href="#">
               <div
